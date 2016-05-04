@@ -1,0 +1,19 @@
+{
+  "name": "bookmarklet_download_images",
+  "description": "bookmarklet download images oh yeah",
+  "version": "1.0.0",
+  "author": "Joseph Chang",
+  "license": "MIT",
+  "scripts": {
+    "hot-dev": "webpack-dev-server --config webpack-hot-dev-server.config.js --hot --progress --colors --port 8080 --inline",
+    "host": "webpack-dev-server --config webpack-hot-dev-server.config.js --hot --progress --colors --host 192.168.1.49 --inline",
+    "build": "webpack --config webpack.build.config.js -p --progress --profile --colors"
+  },
+  "devDependencies": {
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0"
+  },
+  "keywords": [
+    "webpack"
+  ]
+}
