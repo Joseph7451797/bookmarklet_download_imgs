@@ -8,9 +8,6 @@ module.exports = function(options) {
 		],
 		get: [
 			"./download_get.js"
-		],
-		atag: [
-			"./atag.js"
 		]
 	};
 
