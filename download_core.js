@@ -2,7 +2,7 @@
 	var imgs = s.querySelectorAll('img');
 	var length = imgs.length ? imgs.length : null;
 	var hash = new Date().getTime();
-	var temp = '<div id=' + hash + '_close style=display: inline-block;margin-bottom: 15px;width: 40px;height: 40px;background-color: #333;color: #fff;line-height: 40px;font-size: 15px;text-align: center;border-radius: 3px;cursor: pointer;>關閉</div>';
+	var temp = '<div id=' + hash + '_close style="position: fixed;display: inline-block;margin: -10px 0 20px -10px;width: 45px;background-color: #333;color: #fff;line-height: 40px;font-size: 15px;text-align: center;border-radius: 3px;box-shadow: 1px 1px 4px 1px rgba(127, 127, 127, 0.8);cursor: pointer";>關閉</div>';
 	var d;
 
 	if( length ) {
@@ -13,15 +13,15 @@
 			if( src && src.search('http') > -1) {
 				var k = src.lastIndexOf('.');
 				if( k > -1 ) {
-					temp += '<img src="' + src + '" style="display: block;max-width: 100%;"/><a id="' + hash + '_download_link" href="' + src + '" download="img-' + i + src.substr(k) + '" style="display: block;margin: 10px 0 25px; color: blue;">' + src + '</a>';
+					temp += '<div style="margin: 10px 0 40px;max-width: 100%;"><img src="' + src + '" style="display: block;margin-bottom: 10px;max-width: 100%;"/><a id="' + hash + '_download_link" href="' + src + '" download="img-' + i + src.substr(k) + '" style="color: blue;font-size: 16px;">下載此圖</a></div>';
 				}
 			}
 		}
 
-		temp += '抓圖工具頁面 by Joseph, inspired by Angryplay.blogspot.tw';
+		temp += '<div>抓圖工具小視窗 by Joseph, inspired by <a href="http://www.wfublog.com/2015/05/google-drive-direct-link-widget-v2.html" target="_blank">WFU BLOG</a> & <a href="http://angryplay.blogspot.tw/" target="_blank">Angryplay</a></div>';
 
 	}else {
-		temp += '本網頁沒有圖片可供下載<br/>抓圖工具頁面 by Joseph, inspired by Angryplay.blogspot.tw';
+		temp += '<div style="position: absolute;top: 40%;padding: 0 20px 0 0;line-height: 2em;">Oops!!! 本網頁找不到可供下載的圖片<br/>抓圖工具小視窗 by Joseph, inspired by <a href="http://www.wfublog.com/2015/05/google-drive-direct-link-widget-v2.html" target="_blank">WFU BLOG</a> & <a href="http://angryplay.blogspot.tw/" target="_blank">Angryplay</a></div>';
 	}
 
 	d = s.createElement('div');
@@ -38,7 +38,7 @@
       'minWidth': '300px',
       'overflow': 'auto',
       'backgroundColor': '#fff',
-      'boxShadow': '2px 2px 8px 4px #dfdfdf',
+      'boxShadow': '1px 2px 6px 4px rgba(223, 223, 223, 0.4)',
       'borderRadius': '10px'
     };
 

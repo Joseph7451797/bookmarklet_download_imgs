@@ -26,12 +26,14 @@ var getScript = function(d,s,f) {
 };
 
 // 動態將 a 標籤的網址填入
-(function(d,s) {
+(function(w,d,s) {
 
+	var hostname = w.location.hostname;
+	var coreJsUri = hostname === 'localhost' ? '"build/core.js"' : '"https://dl.dropboxusercontent.com/u/43833728/core.js"';
 	var atag = d.getElementById('link');
 
 	if( atag ) {
-		atag.href = "javascript:var awesomebookmark = " + String(s) + "; awesomebookmark(document,'https://dl.dropboxusercontent.com/u/43833728/core.js');";
+		atag.href = "javascript:var awesomebookmark = " + String(s) + "; awesomebookmark(document," + coreJsUri + ");";
 		atag.innerHTML = '打開載圖小視窗';
 	}
-})(document,getScript);
+})(window,document,getScript);

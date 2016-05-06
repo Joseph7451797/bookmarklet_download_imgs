@@ -1,7 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 
-module.exports = function(options) {
+module.exports = function( options ) {
 	var entry = {
 		core: [
 			"./download_core.js"
@@ -12,14 +12,14 @@ module.exports = function(options) {
 	};
 
 	var output = {
-		publicPath: (options.devMode) ? "http://localhost:8080/build/" : "/build/",
+		publicPath: options.devMode ? "http://localhost:8080/build/" : "/build/",
 		path: __dirname + "/build/",
 		filename: "[name].js"
 	};
 
 	var plugins = [];
 
-	if(options.build) {
+	if( options.build ) {
 		plugins.push(
 			new webpack.optimize.DedupePlugin(),
 			new webpack.optimize.OccurenceOrderPlugin(),
@@ -30,7 +30,7 @@ module.exports = function(options) {
 			    }
 			})
 		);
-	}else if(options.devMode) {
+	}else if( options.devMode ) {
 		plugins.push(
 			new webpack.NoErrorsPlugin()
 		);
@@ -44,5 +44,4 @@ module.exports = function(options) {
 		output: output,
 		plugins: plugins
 	}
-	
 };
