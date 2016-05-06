@@ -5,8 +5,8 @@
   "author": "Joseph Chang",
   "license": "MIT",
   "scripts": {
-    "hot-dev": "webpack-dev-server --config webpack-hot-dev-server.config.js --hot --progress --colors --port 8080 --inline",
-    "host": "webpack-dev-server --config webpack-hot-dev-server.config.js --hot --progress --colors --host 192.168.1.49 --inline",
+    "hot-dev": "webpack-dev-server --config webpack-hot-dev-server.config.js --hot --inline --progress --colors --port 8080",
+    "host": "webpack-dev-server --config webpack-hot-dev-server.config.js  --hot --inline --progress --colors --host $(ifconfig en0 inet | grep -oE '\\b(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\b' | head -n 1)",
     "build": "webpack --config webpack.build.config.js -p --progress --profile --colors"
   },
   "devDependencies": {
