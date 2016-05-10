@@ -22,7 +22,7 @@ var getScript = function(d,s,f) {
 	    }
 	}
 	e.src = s;
-	d.documentElement.firstChild.appendChild(e);
+	d.getElementsByTagName('head')[0].appendChild(e);
 };
 
 // 動態將 a 標籤的網址填入
