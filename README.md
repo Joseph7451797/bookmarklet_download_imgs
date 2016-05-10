@@ -2,6 +2,15 @@
 
 這是一個實驗性與娛樂性兼具的的書籤小工具，主要用來抓取網頁圖片
 
+### 使用什麼技術？ ###
+- HTML5 a 標籤 "download" 屬性
+- HTML a 標籤 href="javascript:dosomething();"
+
+### 瀏覽器相容性 ###
+- Google Chrome 完整支援
+- Forefox 僅支援同源圖片連結 
+- 更多資訊：[caniuse.com](http://caniuse.com/#search=download)
+
 ### 如何自娛娛人？ ###
 
 git clone 這個 repo.，並 cd 到目錄，首先安裝開發必須模組
