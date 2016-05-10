@@ -8,7 +8,7 @@
 
 ### 瀏覽器相容性 ###
 - Google Chrome 完整支援
-- Forefox 僅支援同源圖片連結 
+- Firefox 僅支援同源圖片連結 
 - 更多資訊：[caniuse.com](http://caniuse.com/#search=download)
 
 ### 如何自娛娛人？ ###
