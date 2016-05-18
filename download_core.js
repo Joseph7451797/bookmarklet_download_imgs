@@ -7,6 +7,23 @@
 			+'<p style="margin: 20px 0;padding: 0;line-height: 1.4em;font-size: 14px;">小提示：必須設定瀏覽器允許自動下載才能批次下載多張圖片</p>';
 	var d;
 
+	var getHighestZindex = function() {
+		var allElems = s.querySelectorAll('*');
+		var length = allElems.length;
+		var highest = 0;
+		var zindex;
+
+		if( length ) {
+			for(var i = 0; i < length; i++) {
+				zindex = s.defaultView.getComputedStyle(allElems[i],null).getPropertyValue("z-index");
+				if ( zindex > highest && zindex !== 'auto' ) {
+					highest = zindex;
+				}
+			}
+		}
+		return +highest;
+	};
+
 	if( length ) {
 		for(var i = 0; i < length; i++) {
 
@@ -58,7 +75,7 @@
 
 	var styleObj = {
       'position': 'fixed',
-      'zIndex': '10000',
+      'zIndex': getHighestZindex() + 1,
       'top': '20px',
       'right': '20px',
       'padding': '50px 20px 20px',
