@@ -1,6 +1,6 @@
 # README #
 
-這是一個實驗性與娛樂性兼具的的書籤小工具，主要用來抓取網頁圖片
+這是一個實驗性與娛樂性兼具的的書籤小工具，主要用來抓取網頁圖片，[Demo page](http://joseph7451797.github.io/bookmarklet_download_imgs/)
 
 ### 使用什麼技術？ ###
 - HTML5 a 標籤 "download" 屬性
