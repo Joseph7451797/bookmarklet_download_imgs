@@ -15,6 +15,34 @@ a {
   a:hover {
     text-decoration: underline; }
 
+/* comment 客制化樣式開始 */
+.container {
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 100%;
+  max-width: 800px;    
+  line-height: 2em;
+  text-align: center;
+}
+h2 {
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 24px;
+}
+p {
+  padding: 0 20px;
+}
+.intro {
+  margin-bottom: 25px;
+  text-align: justify;
+  text-indent: 2em;
+}
+.img-wrapper > img {
+  margin: 40px 0 10px;
+  width: 60%;
+}
+/* comment 客制化樣式結束 */
+
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
