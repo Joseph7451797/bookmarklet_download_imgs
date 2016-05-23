@@ -2,10 +2,10 @@
 	var imgs = s.querySelectorAll('img');
 	var length = imgs.length ? imgs.length : null;
 	var hash = new Date().getTime();
-	var temp = '<div id=' + hash + '_close style="position: fixed;z-index: 1;top: 30px;display: inline-block;width: 45px;background-color: #333;color: #fff;line-height: 40px;font-size: 15px;text-align: center;border-radius: 3px;box-shadow: 1px 1px 4px 1px rgba(127, 127, 127, 0.8);cursor: pointer";>關閉</div>'
+	var temp = length ? '<div id=' + hash + '_close style="position: fixed;z-index: 1;top: 30px;display: inline-block;width: 45px;background-color: #333;color: #fff;line-height: 40px;font-size: 15px;text-align: center;border-radius: 3px;box-shadow: 1px 1px 4px 1px rgba(127, 127, 127, 0.8);cursor: pointer";>關閉</div>'
 			+'<div id=' + hash + '_download_btn style="position: fixed;z-index: 1;top: 30px;right: 30px;display: inline-block;padding: 0 10px;background-color: #7f7fff;color: #fff;line-height: 40px;font-size: 15px;text-align: center;border-radius: 3px;box-shadow: 1px 1px 6px 1px rgba(127, 127, 127, 0.5);cursor: pointer">下載選擇圖片</div>'
 			+'<p style="margin: 20px 0;padding: 0;line-height: 1.4em;font-size: 14px;">小提示：必須設定瀏覽器允許自動下載才能批次下載多張圖片</p>'
-			+'<input type="checkbox" id="checkallcheck"><span style="line-height: 1.4em;font-size: 14px;">選取全部圖片</span>';
+			+'<input type="checkbox" id="checkallcheck"><span style="line-height: 1.4em;font-size: 14px;">選取全部圖片</span>' : '<div id=' + hash + '_close style="position: fixed;z-index: 1;top: 30px;display: inline-block;width: 45px;background-color: #333;color: #fff;line-height: 40px;font-size: 15px;text-align: center;border-radius: 3px;box-shadow: 1px 1px 4px 1px rgba(127, 127, 127, 0.8);cursor: pointer";>關閉</div>';
 	var d;
 
 	var getHighestZindex = function() {
@@ -59,13 +59,15 @@
 			}
 		}
 
-		temp += '<div style="font-size: 12px;">抓圖工具小視窗 by Joseph, inspired by '
+		temp += '<div style="font-size: 12px;">抓圖工具小視窗 by '
+			+		'<a href="http://joseph7451797.github.io/bookmarklet_download_imgs/" target="_blank" style="color: blue;">Joseph</a>, inspired by '
 			+		'<a href="http://www.wfublog.com/2015/05/google-drive-direct-link-widget-v2.html" target="_blank" style="color: blue;">WFU BLOG</a>'
 			+		' & <a href="http://angryplay.blogspot.tw/" target="_blank" style="color: blue;">Angryplay</a>'
 			+	'</div>';
 
 	}else {
-		temp += '<div style="position: absolute;top: 40%;padding: 0 20px 0 0;font-size: 12px;line-height: 2em;">Oops!!! 本網頁找不到可供下載的圖片<br/>抓圖工具小視窗 by Joseph, inspired by '
+		temp += '<div style="position: absolute;top: 40%;padding: 0 20px 0 0;font-size: 12px;line-height: 2em;">Oops!!! 本網頁找不到可供下載的圖片<br/>抓圖工具小視窗 by '
+			+		'<a href="http://joseph7451797.github.io/bookmarklet_download_imgs/" target="_blank" style="color: blue;">Joseph</a>, inspired by '
 			+		'<a href="http://www.wfublog.com/2015/05/google-drive-direct-link-widget-v2.html" target="_blank" style="color: blue;">WFU BLOG</a>'
 			+		' & <a href="http://angryplay.blogspot.tw/" target="_blank" style="color: blue;">Angryplay</a>'
 			+	'</div>';
