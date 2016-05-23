@@ -5,7 +5,7 @@
 	var temp = length ? '<div id=' + hash + '_close style="position: fixed;z-index: 1;top: 30px;display: inline-block;width: 45px;background-color: #333;color: #fff;line-height: 40px;font-size: 15px;text-align: center;border-radius: 3px;box-shadow: 1px 1px 4px 1px rgba(127, 127, 127, 0.8);cursor: pointer";>關閉</div>'
 			+'<div id=' + hash + '_download_btn style="position: fixed;z-index: 1;top: 30px;right: 30px;display: inline-block;padding: 0 10px;background-color: #7f7fff;color: #fff;line-height: 40px;font-size: 15px;text-align: center;border-radius: 3px;box-shadow: 1px 1px 6px 1px rgba(127, 127, 127, 0.5);cursor: pointer">下載選擇圖片</div>'
 			+'<p style="margin: 20px 0;padding: 0;line-height: 1.4em;font-size: 14px;">小提示：必須設定瀏覽器允許自動下載才能批次下載多張圖片</p>'
-			+'<input type="checkbox" id="checkallcheck"><span style="line-height: 1.4em;font-size: 14px;">選取全部圖片</span>' : '<div id=' + hash + '_close style="position: fixed;z-index: 1;top: 30px;display: inline-block;width: 45px;background-color: #333;color: #fff;line-height: 40px;font-size: 15px;text-align: center;border-radius: 3px;box-shadow: 1px 1px 4px 1px rgba(127, 127, 127, 0.8);cursor: pointer";>關閉</div>';
+			+'<input type="checkbox" id="checkallcheck"><span style="margin-left: 5px;line-height: 1.4em;font-size: 14px;">選取全部圖片</span>' : '<div id=' + hash + '_close style="position: fixed;z-index: 1;top: 30px;display: inline-block;width: 45px;background-color: #333;color: #fff;line-height: 40px;font-size: 15px;text-align: center;border-radius: 3px;box-shadow: 1px 1px 4px 1px rgba(127, 127, 127, 0.8);cursor: pointer";>關閉</div>';
 	var d;
 
 	var getHighestZindex = function() {
