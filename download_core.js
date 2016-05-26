@@ -85,6 +85,7 @@
       'width': '33%',
       'height': '500px',
       'minWidth': '300px',
+	  'textAlign': 'left',
       'overflow': 'auto',
       'backgroundColor': '#fff',
       'boxShadow': '1px 2px 6px 4px rgba(223, 223, 223, 0.4)',
