@@ -4,6 +4,7 @@
 var getScript = function(d,s,f) {
 
 	var e = d.createElement('script');
+    e.setAttribute('charset','UTF-8');
 
 	if( e.readyState ) {
 	    e.onreadystatechange = function() {
