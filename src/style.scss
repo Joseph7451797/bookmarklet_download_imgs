@@ -5,6 +5,7 @@
     top: 30px;
     z-index: 1;
     display: inline-block;
+    padding: 0 10px;
     line-height: 40px;
     color: #fff;
     font-size: 15px;
@@ -29,13 +30,11 @@
     .btn {
         @extend %btn;
         &.left {
-            width: 45px;
             background-color: #333;
             box-shadow: 1px 1px 4px 1px rgba(127, 127, 127, 0.8);
         }
         &.right {
             right: 30px;
-            padding: 0 10px;
             background-color: #7f7fff;
             box-shadow: 1px 1px 6px 1px rgba(127, 127, 127, 0.5);
         }
