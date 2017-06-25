@@ -1,30 +1,39 @@
-# README #
+# Bookmarklet-Download-Imgs #
 
-這是一個實驗性與娛樂性兼具的的書籤小工具，主要用來抓取網頁圖片，[Demo page](http://joseph7451797.github.io/bookmarklet_download_imgs/)
+This browser bookmarklet tool is an experimetal project for downloading image in webpage. [Demo page](http://joseph7451797.github.io/bookmarklet_download_imgs/)
 
-### 使用什麼技術？ ###
-- HTML5 a 標籤 "download" 屬性
-- HTML a 標籤 href="javascript:dosomething();"
+**Note:** This is version 2. Rewrite in ES6 and use webpack2 for development.
+Main code is hosted in another server, remember to add new link in [Demo page](http://joseph7451797.github.io/bookmarklet_download_imgs/) to browser bookmark.
 
-### 瀏覽器相容性 ###
-- Google Chrome 完整支援
-- Firefox 僅支援同源圖片連結 
-- 更多資訊：[caniuse.com](http://caniuse.com/#search=download)
+### How to do that? ###
+- use HTML ```<a>``` download attribute
+- execute Javascript in href of ```<a>```, like ```<a href="javascript:dosomething()";></a>```
 
-### 如何自娛娛人？ ###
+### Browser compatibility ###
+- Google Chrome fully supports
+- Firefox only supports same-origin image
+- More info：[caniuse.com](http://caniuse.com/#search=download)
 
-下載這個 repo.，並 cd 到目錄，首先安裝開發必須模組
+### Have fun in local dev ###
+
+1.Download this repo and install packages
 ```sh
-npm install
-```  
-開啟開發、自娛模式
-```sh
-npm run hot-dev #然後瀏覽器打開http://localhost:8080觀賞佳作
+$ npm install
 ```
-如果有修改原始碼（歡迎fork），使用產出模式打包、壓縮程式碼 
+2.Development mode
 ```sh
-npm run build
+$ npm run dev
 ```
+See http://localhost:8080 at browser
+
+3.Build source code
+```sh
+$ npm run build
+```
+
+### Contribution ###
+
+Feel free to fork!
 
 ### License ###
 MIT License
