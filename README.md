@@ -1,9 +1,9 @@
 # Bookmarklet-Download-Imgs #
 
-This browser bookmarklet tool is an experimetal project for downloading image in webpage. [Demo page](http://joseph7451797.github.io/bookmarklet_download_imgs/)
+This browser bookmarklet tool is an experimetal project for downloading image in webpage. [Demo page](https://joseph7451797.github.io/bookmarklet_download_imgs/)
 
 **Note:** This is version 2. Rewrite in ES6 and use webpack2 for development.
-Main code is hosted in another server, remember to add new link in [Demo page](http://joseph7451797.github.io/bookmarklet_download_imgs/) to browser bookmark.
+Main code is hosted in another server, remember to add new link in [Demo page](https://joseph7451797.github.io/bookmarklet_download_imgs/) to browser bookmark.
 
 ### How to do that? ###
 - use HTML ```<a>``` download attribute
