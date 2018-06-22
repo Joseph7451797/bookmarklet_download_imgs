@@ -5,9 +5,10 @@ const WDS_PORT = '8080'
 const isProd = process.env.NODE_ENV === 'build'
 const isHost = process.env.NODE_ENV === 'host'
 
+const assethash = Math.random().toString(36).slice(2, 8)
 const builtDirname = '/dist/'
 const publicPath = isProd ? builtDirname : isHost ? `http://${process.argv[6]}:${WDS_PORT}/` : `http://localhost:${WDS_PORT}/`
-const serverPathofMainjs = isProd ? 'https://raw.githubusercontent.com/Joseph7451797/bookmarklet_download_imgs/dev/dist/main.js' : '/main.js'
+const serverPathofMainjs = isProd ? `https://cdn.rawgit.com/Joseph7451797/bookmarklet_download_imgs/dev/dist/main.js?${assethash}` : '/main.js'
 
 module.exports = function() {
 

@@ -51,13 +51,13 @@ import style from './style.scss'
         })
 
         temp += `<div class="copywright">${appName} by
-                    <a href="http://joseph7451797.github.io/bookmarklet_download_imgs/" target="_blank">Joseph</a>, inspired by
+                    <a href="https://joseph7451797.github.io/bookmarklet_download_imgs/" target="_blank">Joseph</a>, inspired by
                     <a href="http://www.wfublog.com/2015/05/google-drive-direct-link-widget-v2.html" target="_blank">WFU BLOG</a>
                     &amp;&nbsp;<a href="http://angryplay.blogspot.tw/" target="_blank">Angryplay</a>
                 </div>`
     }else {
         temp += `<div class="copywright noimg">${textCantFindImgs}<br/>${appName} by
-                    <a href="http://joseph7451797.github.io/bookmarklet_download_imgs/" target="_blank">Joseph</a>, inspired by
+                    <a href="https://joseph7451797.github.io/bookmarklet_download_imgs/" target="_blank">Joseph</a>, inspired by
                     <a href="http://www.wfublog.com/2015/05/google-drive-direct-link-widget-v2.html" target="_blank">WFU BLOG</a>
                     &amp;&nbsp;<a href="http://angryplay.blogspot.tw/" target="_blank">Angryplay</a>
                 </div>`
