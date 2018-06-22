@@ -19,6 +19,7 @@ const getScript = (d, s, f, alertmsg) => {
 
     let script = d.createElement('script')
     script.setAttribute('charset', 'UTF-8')
+    script.setAttribute('type', 'application/javascript')
 
     if( script.readyState ) {
         script.onreadystatechange = () => {

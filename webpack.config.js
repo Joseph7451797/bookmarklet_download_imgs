@@ -7,7 +7,7 @@ const isHost = process.env.NODE_ENV === 'host'
 
 const builtDirname = '/dist/'
 const publicPath = isProd ? builtDirname : isHost ? `http://${process.argv[6]}:${WDS_PORT}/` : `http://localhost:${WDS_PORT}/`
-const serverPathofMainjs = isProd ? `//freenpepper.net/lib/bookmarklet_download_imgs${builtDirname}main.js` : '/main.js'
+const serverPathofMainjs = isProd ? 'https://raw.githubusercontent.com/Joseph7451797/bookmarklet_download_imgs/dev/dist/main.js' : '/main.js'
 
 module.exports = function() {
 
