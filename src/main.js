@@ -34,7 +34,7 @@ import style from './style.scss'
         imgs.forEach((element) => {
             // find other url(s) in attributes and insert to preview(some sites use lazyload plugin)
             let obj = element.attributes
-            let regex = /\.(jpg|jpeg|png|gif)$/gm
+            let regex = /\.(jpg|jpeg|png|gif)/gm
 
             for (var key in obj) {
                 if ( obj.hasOwnProperty(key) ) {
