@@ -46,9 +46,7 @@ module.exports = function() {
                             plugins: function () {
                                 return [ // all plugin info can be found on postcss-loader github page
                                     require('postcss-css-reset'),
-                                    require('autoprefixer')({
-                                        browsers: [ '> 5%' ]
-                                    })
+                                    require('autoprefixer')
                                 ]
                             },
                             sourceMap: !isProd
